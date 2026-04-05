@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SavAItale — Legal</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      color: #1a1a1a; background: #fff;
+      line-height: 1.7; font-size: 16px;
+    }
+    header {
+      background: #1B6B4A; color: #fff;
+      padding: 24px 24px 20px;
+    }
+    header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+    header p  { font-size: 13px; opacity: 0.8; }
+    nav {
+      display: flex; gap: 0;
+      border-bottom: 1px solid #e5e5e5;
+      background: #f9f9f9;
+    }
+    nav button {
+      flex: 1; padding: 14px; border: none;
+      background: transparent; font-size: 14px;
+      font-weight: 500; cursor: pointer; color: #555;
+      border-bottom: 3px solid transparent;
+    }
+    nav button.active { color: #1B6B4A; border-bottom-color: #1B6B4A; }
+    .page { display: none; max-width: 720px; margin: 0 auto; padding: 32px 24px 60px; }
+    .page.active { display: block; }
+    h2 { font-size: 20px; font-weight: 700; margin: 32px 0 8px; color: #1B6B4A; }
+    h2:first-child { margin-top: 0; }
+    h3 { font-size: 15px; font-weight: 600; margin: 20px 0 6px; }
+    p  { margin-bottom: 12px; color: #333; }
+    ul { padding-left: 20px; margin-bottom: 12px; }
+    li { margin-bottom: 6px; color: #333; }
+    .highlight {
+      background: #E8F5EE; border-left: 4px solid #1B6B4A;
+      padding: 14px 16px; border-radius: 0 8px 8px 0;
+      margin: 20px 0; font-size: 14px;
+    }
+    .highlight strong { color: #1B6B4A; }
+    .date { font-size: 13px; color: #888; margin-bottom: 24px; }
+    .contact {
+      background: #f5f5f5; border-radius: 10px;
+      padding: 16px; margin-top: 32px; font-size: 14px;
+    }
+    .contact a { color: #1B6B4A; }
+    .warning {
+      background: #FDF3E3; border-left: 4px solid #C4862A;
+      padding: 14px 16px; border-radius: 0 8px 8px 0;
+      margin: 20px 0; font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>SavAItale — Medical Bill Coach</h1>
+  <p>Legal documents · Last updated April 2026</p>
+</header>
+
+<nav>
+  <button class="active" onclick="show('privacy', this)">Privacy policy</button>
+  <button onclick="show('terms', this)">Terms of service</button>
+</nav>
+
+<!-- PRIVACY POLICY -->
+<div class="page active" id="privacy">
+  <p class="date">Effective date: April 5, 2026 · Version 1.0</p>
+
+  <div class="highlight">
+    <strong>The short version:</strong> SavAItale stores all your data locally on your device only. We do not collect, store, or sell your personal information or medical data on any server. Your bills stay on your phone.
+  </div>
+
+  <h2>Who we are</h2>
+  <p>SavAItale ("we", "our", "the app") is a mobile application designed to help individuals understand, track, and dispute medical bills in the United States. SavAItale is operated as an independent application.</p>
+
+  <h2>What data we collect</h2>
+  <h3>Data stored locally on your device</h3>
+  <p>All data you enter into SavAItale is stored exclusively on your device using your phone's local storage. This includes:</p>
+  <ul>
+    <li>Your name and insurance information you enter in Settings</li>
+    <li>Medical bills you add manually or via the bill scanner</li>
+    <li>Photos of medical bills you scan</li>
+    <li>Cost estimates you generate</li>
+    <li>Notes and dispute tracking information</li>
+    <li>Your deductible and spending information</li>
+  </ul>
+  <p>This data never leaves your device unless you explicitly choose to share or export it.</p>
+
+  <h3>Data sent to Anthropic (Claude AI)</h3>
+  <p>When you use the Bill Scanner or Cost Estimator features, images and text are sent to Anthropic's Claude AI API for analysis. This data is processed according to <a href="https://www.anthropic.com/privacy" target="_blank">Anthropic's Privacy Policy</a>. We send only the minimum data needed for the feature to work.</p>
+  <p>We recommend not including sensitive personal identifiers (such as Social Security numbers) in bills you scan, though such information is typically not present on medical bills.</p>
+
+  <h3>Data we do NOT collect</h3>
+  <ul>
+    <li>We do not operate any servers or databases</li>
+    <li>We do not collect analytics or usage data</li>
+    <li>We do not use advertising or tracking SDKs</li>
+    <li>We do not sell any data to third parties</li>
+    <li>We do not have access to your bills or personal information</li>
+  </ul>
+
+  <h2>Camera and photo library</h2>
+  <p>SavAItale requests access to your camera and photo library solely to allow you to photograph and upload medical bills. Photos are stored locally on your device. We do not upload photos to any server other than sending them to Anthropic's Claude API for bill analysis when you initiate a scan.</p>
+
+  <h2>Notifications</h2>
+  <p>SavAItale may send you local notifications (reminders for bill due dates and dispute follow-ups). These are scheduled entirely on your device — no notification data is sent to our servers.</p>
+
+  <h2>HIPAA notice</h2>
+  <p>SavAItale is a consumer-facing personal finance tool, not a covered entity or business associate under HIPAA. All data is stored locally on your device and is not transmitted to SavAItale servers. You are responsible for the security of your own device.</p>
+
+  <h2>Children's privacy</h2>
+  <p>SavAItale is not directed at children under 13. We do not knowingly collect information from children under 13.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>We may update this privacy policy from time to time. Changes will be reflected in the "Last updated" date at the top of this page. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+
+  <div class="contact">
+    <strong>Questions?</strong><br>
+    Contact us at: <a href="mailto:privacy@savaitale.app">privacy@savaitale.app</a>
+  </div>
+</div>
+
+<!-- TERMS OF SERVICE -->
+<div class="page" id="terms">
+  <p class="date">Effective date: April 5, 2026 · Version 1.0</p>
+
+  <div class="warning">
+    <strong>Important:</strong> SavAItale is a financial and billing analysis tool. It is not a substitute for professional medical, legal, or financial advice. Always consult a qualified professional for medical and financial decisions.
+  </div>
+
+  <h2>Acceptance of terms</h2>
+  <p>By downloading or using SavAItale, you agree to these Terms of Service. If you do not agree, do not use the app.</p>
+
+  <h2>What SavAItale does</h2>
+  <p>SavAItale helps you:</p>
+  <ul>
+    <li>Estimate out-of-pocket costs for medical procedures</li>
+    <li>Scan medical bills to identify potential billing errors</li>
+    <li>Track and dispute medical bills</li>
+    <li>Find financial assistance programs</li>
+  </ul>
+
+  <h2>Medical disclaimer</h2>
+  <p>SavAItale is not a medical service. The app does not provide medical advice, diagnosis, or treatment. Billing error analysis is provided for informational purposes only and may not be accurate in all cases.</p>
+  <p>You should always verify billing information with your healthcare provider and insurer before taking action. SavAItale is not responsible for outcomes resulting from disputes or actions taken based on app analysis.</p>
+
+  <h2>Financial disclaimer</h2>
+  <p>Cost estimates provided by SavAItale are based on national averages and publicly available data. Actual costs may vary significantly based on your specific plan, provider contracts, geographic location, and individual circumstances. Estimates are for planning purposes only and are not guarantees of actual costs.</p>
+
+  <h2>AI-powered analysis</h2>
+  <p>Bill scanning and error detection use Claude AI (Anthropic). AI analysis may contain errors or omissions. You are responsible for verifying any identified errors with your healthcare provider before disputing charges. SavAItale does not guarantee the accuracy of AI-generated analysis.</p>
+
+  <h2>User responsibilities</h2>
+  <ul>
+    <li>You are responsible for the accuracy of information you enter into the app</li>
+    <li>You are responsible for maintaining the security of your device</li>
+    <li>You agree not to use the app for fraudulent purposes</li>
+    <li>You agree not to submit false dispute claims based on app analysis</li>
+  </ul>
+
+  <h2>Intellectual property</h2>
+  <p>SavAItale and all associated content, design, and code are proprietary. You may not copy, modify, distribute, or reverse engineer any part of the app.</p>
+
+  <h2>Limitation of liability</h2>
+  <p>SavAItale is provided "as is" without warranties of any kind. To the maximum extent permitted by law, SavAItale and its creators are not liable for any damages arising from use of the app, including but not limited to inaccurate bill analysis, missed disputes, or financial losses.</p>
+
+  <h2>Governing law</h2>
+  <p>These terms are governed by the laws of the United States. Any disputes will be resolved in the jurisdiction where the app creator resides.</p>
+
+  <h2>Changes to terms</h2>
+  <p>We may update these terms from time to time. Continued use of the app after changes constitutes acceptance of the updated terms.</p>
+
+  <div class="contact">
+    <strong>Questions about these terms?</strong><br>
+    Contact us at: <a href="mailto:legal@savaitale.app">legal@savaitale.app</a>
+  </div>
+</div>
+
+<script>
+  function show(id, btn) {
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('nav button').forEach(b => b.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+    btn.classList.add('active');
+  }
+</script>
+</body>
+</html>
